@@ -1,2 +1,2 @@
 # Proyecto-Final-Frontend
-este es el proyecto fginal de la materia de frontend
+este es el proyecto final de la materia de frontend
