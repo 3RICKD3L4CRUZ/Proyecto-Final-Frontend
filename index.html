@@ -390,7 +390,7 @@
             </article>
         </article>
     </section>
-    <h1 class="team-title margen">BLOG</h1>
+    <h1 class="team-title margen">PORTAFOLIO</h1>
     <article class="title-line"></article>
     <section class="blog">
         <div class="contendor">
@@ -633,11 +633,11 @@
                 </p>
                 <form class="contact-form">
                     <div class="form-row">
-                        <input type="text" placeholder="Name" class="form-input" required>
-                        <input type="email" placeholder="Email" class="form-input" required>
+                        <input type="text" placeholder="Name" class="form-input" >
+                        <input type="email" placeholder="Email" class="form-input" >
                     </div>
                     <div class="form-row">
-                        <input type="tel" placeholder="Phone" class="form-input" required>
+                        <input type="tel" placeholder="Phone" class="form-input" >
                     </div>
                     <div class="form-row full-width">
                         <textarea placeholder="Request" class="form-textarea" rows="6"></textarea>
@@ -719,5 +719,27 @@
         }
         setTimeout(tiempo, 10000000);
      </script>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const inputs = this.querySelectorAll('input, textarea');
+            let isEmpty = false;
+            
+            inputs.forEach(function(input) {
+                if (input.value.trim() === '') {
+                    isEmpty = true;
+                }
+            });
+            
+            if (isEmpty) {
+                alert('Por favor completa todos los campos');
+                return;
+            }
+            
+            alert('¡Mensaje enviado correctamente!');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
