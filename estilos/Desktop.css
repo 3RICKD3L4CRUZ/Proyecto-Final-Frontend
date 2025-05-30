@@ -811,9 +811,8 @@ background: var(--naranja);
 }
 /* blog */
 .blog {
-    padding: 60px 20px;
+    padding: 30px 20px;
 }
-
 .contendor {
     max-width: 1200px;
     margin: 0 auto;
@@ -839,7 +838,7 @@ background: var(--naranja);
     display: flex;
     justify-content: space-between;
     padding: 25px 25px 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--blanco);
 }
 .tag, .msgs {
     font-family: var(--font-texto);
@@ -858,7 +857,7 @@ background: var(--naranja);
 .textt {
     font-family: var(--font-texto);
     padding: 0 25px 25px;
-    color: #666;
+    color: var(--gris);
     font-size: 17px;
     line-height: 1.7;
 }

@@ -466,38 +466,38 @@
         border-radius: 15px;
     }
     /* blog */
-    .item {
+     .contendor {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .item_w {
         max-width: 100%;
         min-width: auto;
+        width: 100%;
     }
-    .titlew {
-        font-size: 26px;
+    .title_w {
+        font-size: 24px;
+        padding: 20px 20px 12px;
     }
-    .meta{
-        padding-left: 20px;
-        padding-right: 20px;
+    .meta {
+        padding: 20px 20px 15px;
     }
-    .titlew{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .text{
-        padding-left: 20px;
-        padding-right: 20px;
+    .textt {
+        padding: 0 20px 20px;
+        font-size: 16px;
     }
     .base {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
     }
-    .back-top {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
+    .pic {
+        width: 60px;
+        height: 60px;
     }
-    
-    .back-top i {
-        font-size: 18px;
+    .day {
+        font-size: 22px;
+    }
+    .month {
+        font-size: 14px;
     }
     /* +++++++++++ animaciones +++++++ */
     :root {
